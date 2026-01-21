@@ -47,9 +47,8 @@ if uploaded_file is not None:
             st.error(f"문서 처리 중 오류: {e}")
             st.stop()
 
-    # (2) LLM 연결 (여기가 수정된 부분입니다!)
-    # gemini-pro -> gemini-1.5-flash (최신 모델로 변경)
-    llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=google_api_key)
+    # (2) LLM 연결 (최신 모델 + 최신 라이브러리 조합)
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=google_api_key)
     
     query = st.chat_input("궁금한 용어를 물어보세요!")
     
