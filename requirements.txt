@@ -4,3 +4,4 @@ langchain-community==0.3.0
 langchain-google-genai
 faiss-cpu
 pymupdf
+sentence-transformers
